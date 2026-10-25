@@ -3,6 +3,7 @@
 [![Google Earth Engine](https://img.shields.io/badge/Google%20Earth%20Engine-JavaScript-34A853?logo=googleearth&logoColor=white)](https://code.earthengine.google.com)
 [![Sentinel-5P](https://img.shields.io/badge/data-Sentinel--5P%20%7C%20MODIS%20MAIAC-0B5394)](https://developers.google.com/earth-engine/datasets/catalog/sentinel-5p)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23646371.svg)](https://doi.org/10.5281/zenodo.23646371)
 
 Monthly **air-quality indicators from satellites** for a city or region and for any set of monitoring stations: **NO₂, SO₂, CO, O₃, HCHO** from Sentinel-5P TROPOMI and **aerosol optical depth (AOD)** from MODIS MAIAC, all from one script and in one tidy CSV.
 
@@ -56,6 +57,12 @@ For a single pollutant at many stations with daily values, see [gee-no2-station-
 - SO₂ and HCHO are noisy over clean areas, and monthly means can be slightly negative. Prefer longer averages or larger regions for these two.
 - Sentinel-5P data start in mid-2018 (NO₂ OFFL from 2018-06, others from 2018-07); MAIAC AOD starts in 2000.
 - `n_images` gives the number of images in each monthly mean, so you can drop months with poor coverage.
+
+## Cite this tool
+
+Abbasalizadehrezaei, P. (2026). *Air-Quality Toolkit (Sentinel-5P and MODIS MAIAC)* (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23646371
+
+GitHub also offers a ready-made citation under **Cite this repository** (from [CITATION.cff](CITATION.cff)).
 
 ## Author
 
